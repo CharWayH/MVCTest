@@ -24,5 +24,31 @@
     <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 8.5.37" level="application_server_libraries" />
     <orderEntry type="library" exported="" name="servlet-api" level="project" />
     <orderEntry type="library" exported="" name="mysql-connector-java-5.1.47" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/poi-3.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/jython-installer-2.7.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/jython-installer-2.7.0.jar!/Doc/javadoc" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/jython-installer-2.7.0.jar!/Demo/embed" />
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/jython-installer-2.7.0.jar!/Demo/jreload/src" />
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/jython-installer-2.7.0.jar!/src" />
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/jython-installer-2.7.0.jar!/tests/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="jython" level="project" />
   </component>
 </module>

@@ -1,29 +1,27 @@
 package entity;
 
 public class Login {
-    private int id;
-    private String uname;
-    private String pwd;
+    private String name;
+    private String password;
 
-    public Login(String uname, String pwd) {
-        this.uname = uname;
-        this.pwd = pwd;
+    public Login(String name, String password) {
+        this.name = name;
+        this.password = password;
     }
 
-
-    public String getUname() {
-        return uname;
+    public String getName() {
+        return name;
     }
 
-    public void setUname(String uname) {
-        this.uname = uname;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPwd() {
-        return pwd;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
