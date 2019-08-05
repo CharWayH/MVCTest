@@ -10,7 +10,8 @@ import java.net.URLEncoder;
 
 
 public class ExcelServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("utf-8");
         String year = request.getParameter("year");
         String month = request.getParameter("month");
@@ -20,7 +21,7 @@ public class ExcelServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        String filename = month+"Month.xls";
+        String filename = month + "Month.xls";
         filename  = URLEncoder.encode(filename,"UTF-8");
         //下载需要设置响应头
         response.setHeader("content-Type","application/octet-stream");//MIME类型为二进制
@@ -39,7 +40,7 @@ public class ExcelServlet extends HttpServlet {
         outputStream.close();
         inputStream.close();
     }
-
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }

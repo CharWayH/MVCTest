@@ -14,21 +14,30 @@ public class ExcelDemo {
 
     //将英文周几转化为中文
     private static String week2String(String str) {
-        if ("mon".equalsIgnoreCase(str) || "星期一".equalsIgnoreCase(str))
+        if ("mon".equalsIgnoreCase(str) || "星期一".equalsIgnoreCase(str)) {
             return "周一";
-        else if ("tue".equalsIgnoreCase(str) || "星期二".equalsIgnoreCase(str))
+        }
+        else if ("tue".equalsIgnoreCase(str) || "星期二".equalsIgnoreCase(str)) {
             return "周二";
-        else if ("wed".equalsIgnoreCase(str) || "星期三".equalsIgnoreCase(str))
+        }
+        else if ("wed".equalsIgnoreCase(str) || "星期三".equalsIgnoreCase(str)) {
             return "周三";
-        else if ("thu".equalsIgnoreCase(str) || "星期四".equalsIgnoreCase(str))
+        }
+        else if ("thu".equalsIgnoreCase(str) || "星期四".equalsIgnoreCase(str)) {
             return "周四";
-        else if ("fri".equalsIgnoreCase(str) || "星期五".equalsIgnoreCase(str))
+        }
+        else if ("fri".equalsIgnoreCase(str) || "星期五".equalsIgnoreCase(str)) {
             return "周五";
-        else if ("sat".equalsIgnoreCase(str) || "星期六".equalsIgnoreCase(str))
+        }
+        else if ("sat".equalsIgnoreCase(str) || "星期六".equalsIgnoreCase(str)) {
             return "周六";
-        else if ("sun".equalsIgnoreCase(str) || "星期日".equalsIgnoreCase(str))
+        }
+        else if ("sun".equalsIgnoreCase(str) || "星期日".equalsIgnoreCase(str)) {
             return "周日";
-        return "";
+        }
+        else {
+            return "";
+        }
     }
 
     //获取某月共有几天
